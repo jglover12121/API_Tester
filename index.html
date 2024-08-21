@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <fieldset>
+
+    <legend>quick api tester</legend>
+    <div class="urlContainer">
+      <div>Set url</div>
+      <div>
+        <input id="url" type="text" placeholder="https...">
+        <button id="setURL">set</button>
+      </div>
+      <div>Set specified data to grab</div>
+      <div>
+        <input id="specificData" type="text" placeholder="/value...">
+        <button id="setData">set</button>
+      </div>
+    </div>
+    <div class="responseContainer">
+      <div class="retrievedDataContainer">
+        <label class="retrievedData" id="retrievedData">Retrieved data
+        </label>
+        <button id="getData">get</button>
+      </div>
+      <div>
+        <div>Data to send</div>
+        <input id="setDataToSend" placeholder='"Hello world"...'>
+        <button id="sendData">send</button>
+      </div>
+    </div>
+  </fieldset>
+  <script src="script.js"></script>
+  <style>
+    .urlContainer{
+      margin-bottom: 20px;
+    }
+    .retrievedDataContainer{
+      margin-bottom: 20px;
+    }
+    fieldset{
+      max-width: 250px;
+      min-width: 220px;
+    }
+  </style>
+</body>
+
+</html>
