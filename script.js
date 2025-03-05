@@ -48,7 +48,8 @@ async function sendData(){
     const response = await fetch(url, {
       method: "POST",
       headers: {
-        "Content-Type": "text/plain"
+        "Content-Type": "text/plain",
+        "Access-Control-Allow-Origin" : "no-cors"
       },
       body: dataToSend.value
     })
